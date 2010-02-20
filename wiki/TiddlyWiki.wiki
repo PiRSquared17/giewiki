@@ -1,8 +1,9 @@
 The amazing personal wiki-on-a-stick
 = Introduction =
-Originally developed by Jeremy Ruston, TiddlyWiki is an increasingly popular browser script, that implements a single-user wiki within the limitations of the web-browser.
+Originally developed by Jeremy Ruston, TiddlyWiki is an increasingly popular browser script, that implements a single-user wiki within the confines of the web-browser.
 
 = Details =
 
 www.tiddlwiki.com - the original home page and the place to get it.
+
 www.tiddlwiki.org - the meta site, documentation, resources, etc.
