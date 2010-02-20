@@ -148,7 +148,7 @@ config.views = {
         },
     editor: {
         tagPrompt: "Type tags separated with spaces, [[use double square brackets]] if necessary, or add existing",
-        defaultText: "Type the text for '%0'",
+        defaultText: "",
         tagChooser: {
             text: "tags",
             tooltip: "Choose existing tags to add to this tiddler",
@@ -7007,6 +7007,8 @@ function OnCommitCloseForm(fn,reply)
 {
 	if (reply.Success) {
 		story.closeTiddler(fn);
+		if (fn == "PageProperties")
+			window.location.reload();
 		return reply;
 	}
     return false;

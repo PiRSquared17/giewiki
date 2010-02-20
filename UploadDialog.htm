@@ -29,7 +29,6 @@ function init()
 		var fnsp = fname.lastIndexOf(".");
 		var fnxt = fnsp > 0 ? fname.substr(0,fnsp) : fname;
 		var	text = ftype == "image/jpeg" ? "<<image '" + fname + "' < 50%>>" : "[[" + fname + "|" + fname + "]]";
-		debugger;
 		var action = 'InsertTiddlerText("'.concat( fnxt, '","', text, '","',window.location.search.substr(1), '")');
 		pw.setTimeout(action,1);
 
@@ -105,7 +104,6 @@ function moveElements(se,de,dd)
 
 function valid() 
 {
-	debugger
 	var srcfn = document.upldlg.MyFile.value;
 	if (srcfn == "") {
 		alert("Please select the file to upload");

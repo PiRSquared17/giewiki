@@ -446,10 +446,9 @@ body {font-size:0.8em;}
 <div title="GettingStarted">
 	<pre>
 To get started with this blank page, you'll need to modify the following tiddlers:
-* SiteTitle &amp; SiteSubtitle: The title and subtitle of the site, as shown above (after saving, they will also appear in the browser title bar)
-* MainMenu: The menu (usually on the left)
+* PageProperties: The title of the page, as shown above, and the access levels
+* MainMenu: The menu that appears on the left
 * DefaultTiddlers: Contains the names of the tiddlers that you want to appear when the page is opened
-You may also want to change the PageProperties.
 	</pre>
 </div>
 <div title="EditingMenu">
@@ -469,7 +468,7 @@ tiddler|File list|file list|list of uploaded files|f
 </div>
 <div title="OptionsPanel">
 <pre>
-These InterfaceOptions for customising TiddlyWiki are saved in your browser
+These options are saved in your browser
 
 &lt;&lt;option chkRegExpSearch&gt;&gt; RegExpSearch
 &lt;&lt;option chkCaseSensitiveSearch&gt;&gt; CaseSensitiveSearch
@@ -508,7 +507,7 @@ if (http.deletePage(window.location.href).Success) {
 	&lt;/script&gt;
 &lt;html&gt;&lt;div class='title'&gt;Page properties&lt;/div&gt;&lt;/html&gt;
 |&gt;|&gt;|Title&lt;br&gt;&lt;&lt;input text title 95&gt;&gt;|
-|&gt;|&gt;|SubTitle&lt;br&gt;&lt;&lt;input text subtitle 95&gt;&gt;|
+|&gt;|&gt;|Subtitle&lt;br&gt;&lt;&lt;input text subtitle 95&gt;&gt;|
 |Owner&lt;br&gt;&lt;&lt;input text owner 36&gt;&gt;|Group(s) &lt;&lt;defineGroup&gt;&gt;&lt;br&gt;&lt;&lt;input text groups 36&gt;&gt;|Locked&lt;br&gt;&lt;&lt;input checkbox locked false&gt;&gt;|
 |&gt;|&gt;|Access permissions|
 |Group&lt;br&gt;&lt;&lt;input select group javascript:accessTypes&gt;&gt;|Authenticated&lt;br&gt;&lt;&lt;input select authenticated javascript:accessTypes &gt;&gt;|Anonymous&lt;br&gt;&lt;&lt;input select anonymous &quot;javascript:accessTypes&quot;&gt;&gt;|
