@@ -1,4 +1,4 @@
-Technical details relative to TiddlyWiki
+Technical details relative to TiddlyWiki. See also the SourceCodeGuide.
 
 = Introduction =
 
