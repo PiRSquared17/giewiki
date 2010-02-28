@@ -1,0 +1,16 @@
+How to deploy giewiki at your own appspot site.
+
+= Introduction =
+
+To deploy giewiki to a different site, you have to first edit the *app.yaml* file, changing the first line: 
+{{{
+application: giewiki
+}}}
+..to name your appspot subdomain in stead of giewiki.
+
+You may also want to change the line in *static/iewiki.js* that reads:
+{{{
+SiteUrl: "http://giewiki.appspot.com/",
+}}}
+which is used for generating an RSS feed (NYI).
+
