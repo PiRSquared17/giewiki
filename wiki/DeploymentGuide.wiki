@@ -14,3 +14,12 @@ SiteUrl: "http://giewiki.appspot.com/",
 }}}
 which is used for generating an RSS feed (NYI).
 
+= Deployment =
+
+Actual deployment is performed using the *appcfg.py* script as described here:
+
+http://code.google.com/intl/da/appengine/docs/python/tools/uploadinganapp.html
+
+What that page doesn't say, however, is that on some platforms (Windows, for sure), you can launch the process directly from the Google App Engine Launcher that comes with the App Engine SDK.
+
+There is currently no way to deploy content together with the code.
