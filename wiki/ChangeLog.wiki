@@ -1,0 +1,12 @@
+== 1.0.1 ==
+
+Initial release.
+
+== 1.0.2 ==
+
+Mostly bugfixes.
+
+== 1.1.0 ==
+
+  * Added automatic links to other pages as well as to tiddlers.
+  * Added RSS support.
