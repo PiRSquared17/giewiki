@@ -10,3 +10,11 @@ Mostly bugfixes.
 
   * Added automatic links to other pages as well as to tiddlers.
   * Added RSS support.
+
+== 1.2.0 ==
+
+  * ShadowTiddlerTag
+  * IncludesTag
+  * RecentComments
+  * ServerMacros
+  * HttpMethods
