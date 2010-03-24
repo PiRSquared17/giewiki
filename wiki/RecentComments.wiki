@@ -1,0 +1,5 @@
+The recentComments shadow tiddler
+
+= Introduction =
+
+Shows a list of the most recent comments, site-wide. Buttons are included for paging back in time.
