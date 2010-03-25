@@ -1,4 +1,4 @@
-#summary The *http* object and HttpMethods special tiddler
+#summary The http javascript object and HttpMethods special tiddler
 
 = Introduction =
 
