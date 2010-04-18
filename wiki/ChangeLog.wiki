@@ -19,3 +19,11 @@ Mostly bugfixes.
   * ServerMacros
   * HttpMethods
   * ExportImport tiddlywiki
+
+== 1.3.beta ==
+
+  * edit locking, permanent tiddler locking
+  * backup/restore
+  * subdomains (separate or combined content, publising from there)
+  * PluginManager
+  * support for Plugins that add to config.shadowTiddlers
