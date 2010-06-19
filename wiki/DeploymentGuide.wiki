@@ -19,3 +19,5 @@ Actual deployment is performed using the *appcfg.py* script as described [http:/
 What that page doesn't say, however, is that on some platforms (Windows, for sure), you can launch the process directly from the Google App Engine Launcher that comes with the App Engine SDK.
 
 There is currently no way to deploy content together with the code.
+
+Beware that if you are upgrading an existing application, it may be quite a while before it is fully functional, because the server needs to rebuild the indexes which is a task that is queued for batch processing. Under heavy load it may take several hours, but you can monitor the process at appengine.google.com. 
