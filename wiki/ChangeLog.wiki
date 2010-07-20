@@ -27,3 +27,14 @@ Mostly bugfixes.
   * subdomains (separate or combined content, publising from there)
   * PluginManager
   * support for Plugins that add to config.shadowTiddlers
+
+== 1.3.1 ==
+
+  * Import tiddlers from files or URL's
+
+== 1.4.1 ==
+
+  * User profiles
+  * Tiddler diff
+  * Page properties lists imported content
+  * Read-only view options: Access to prior versions, Show view button
