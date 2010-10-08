@@ -6,7 +6,7 @@ In addition to having your own (free) App Engine account (go to https://appengin
 
 = Adaptation =
 
-To deploy giewiki to your own site, you need to unpack giewiki-1.5.1.and change one file, the one named *app.yaml*, altering the first line: 
+To deploy giewiki to your own site, you need to download and unpack giewiki-1.5.1.zip and change one file, the one named *app.yaml*, altering the first line: 
 {{{
 application: giewiki
 }}}
@@ -16,7 +16,7 @@ application: giewiki
 
 Actual deployment can be performed using the *appcfg.py* script as described [http://code.google.com/intl/da/appengine/docs/python/tools/uploadinganapp.html here]
 
-What that page doesn't say, however, is that on some platforms (Windows and Mac), you can launch the process directly from the Google App Engine Launcher which is a GUI app that comes with the App Engine SDK.
+What that page doesn't say, however, is that on some platforms (Windows and Mac), you can launch the process directly from the _Google App Engine Launcher_ which is a GUI app that comes with the App Engine SDK. Just choose *File-Add Existing application* and select the unpacked giewiki folder, that you have modified as described above. Then it will be added to the (initially empty) list, and you can just select it and click the *deploy* button. The deployment process takes a couple of minutes, but there's an output window that shows you what's happening.
 
 If this is _not_ the first version that you deploy to a particular site, you need to explicitly set the new version as the default, using the app engine dashboard at http://appengine.google.com (under Administration/Versions) - this is so that you can revert to the prior version, if needed.
 
