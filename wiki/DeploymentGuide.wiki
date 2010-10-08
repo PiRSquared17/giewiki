@@ -14,12 +14,12 @@ application: giewiki
 
 = Deployment =
 
-Actual deployment can be performed using the *appcfg.py* script as described [http://code.google.com/intl/da/appengine/docs/python/tools/uploadinganapp.html here]
+Actual deployment can be performed using the *appcfg.py* script as described [http://code.google.com/appengine/docs/python/tools/uploadinganapp.html here]
 
 What that page doesn't say, however, is that on some platforms (Windows and Mac), you can launch the process directly from the _Google App Engine Launcher_ which is a GUI app that comes with the App Engine SDK. Just choose *File-Add Existing application* and select the unpacked giewiki folder, that you have modified as described above. Then it will be added to the (initially empty) list, and you can just select it and click the *deploy* button. The deployment process takes a couple of minutes, but there's an output window that shows you what's happening.
 
 If this is _not_ the first version that you deploy to a particular site, you need to explicitly set the new version as the default, using the app engine dashboard at http://appengine.google.com (under Administration/Versions) - this is so that you can revert to the prior version, if needed.
 
-There is currently no way to deploy content together with the code, but if you need to, read http://code.google.com/intl/da-DK/appengine/docs/python/tools/uploadingdata.html.
+There is currently no way to deploy content together with the code, but if you need to, read http://code.google.com/appengine/docs/python/tools/uploadingdata.html.
 
 Beware that if you are upgrading an existing application, it may be quite a while before it is fully functional, because the server needs to rebuild the indexes which is a task that is queued for batch processing. Under heavy load it may take several hours, but you can monitor the process at appengine.google.com. 
