@@ -2,15 +2,15 @@ How to deploy giewiki at your own appspot site.
 
 = Requirements =
 
-In addition to having your own (free) App Engine account (go to https://appengine.google.com/start if you haven't one already), you will need [http://www.python.org/download/releases/2.5.4/ Python 2.5 (or 2.6)] and the [http://code.google.com/appengine/downloads.html App Engine SDK] 
+In addition to having your own (free) App Engine account (go to https://appengine.google.com/start if you haven't one already), you will need [http://www.python.org/download/releases/2.5.4/ Python 2.5 (or 2.6)] and the [http://code.google.com/appengine/downloads.html App Engine SDK] from Google, both of which are also free (recent Mac or Linux boxes already have Python; if your're unsure, open a terminal window and type python).
 
 = Adaptation =
 
-To deploy giewiki to your own site, you have to first edit the *app.yaml* file, changing the first line: 
+To deploy giewiki to your own site, you need to unpack giewiki-1.5.1.and change one file, the one named *app.yaml*, altering the first line: 
 {{{
 application: giewiki
 }}}
-..to name your appspot subdomain in stead of giewiki.
+..to name your appspot subdomain in stead of {{{giewiki}}} (One Google account allows you to allocate up to 10 apps/subdomains).
 
 = Deployment =
 
