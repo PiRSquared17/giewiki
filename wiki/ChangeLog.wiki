@@ -38,3 +38,14 @@ Mostly bugfixes.
   * Tiddler diff
   * Page properties lists imported content
   * Read-only view options: Access to prior versions, Show view button
+
+== 1.5.1 ==
+
+  * Allow reverting edits
+  * Allow setting a prior version to be the current version
+  * Allow deleting prior versions
+
+== 1.6 ==
+
+  * Introduces page templates & tiddler libraries
+  * Allow page-level tags
