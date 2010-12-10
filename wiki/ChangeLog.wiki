@@ -47,5 +47,5 @@ Mostly bugfixes.
 
 == 1.6 ==
 
-  * Introduces page templates & tiddler libraries
+  * Introduces PageTemplates & tiddler libraries
   * Allow page-level tags
