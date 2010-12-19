@@ -56,3 +56,7 @@ Fixes 3 issues with the Import facility:
   * When import failed, it would not report the cause.
   * Pages that had {{{<br>}}} elements, like http://tiddlywiki.com/, would fail to import.
   * When no 'other..' source was defined in AdvancedOptions, it would prompt for a URL only the first time 'other..' was clicked.
+
+== 1.7.0 ==
+
+  * Allows subdomain wikis using app engine namespaces
