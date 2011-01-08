@@ -1108,10 +1108,13 @@ class MainPage(webapp.RequestHandler):
 	self.reply({'Success': True, 'Address': npt })
 	
   def siteMap(self):
-	pal = Page.all().order('path')
+	path = self.request.get('path',None)
+	pal = Page.Filter(path).order('path')
 	xd = XmlDocument()
 	xroot = xd.add(xd,'SiteMap', attrs={'type':'object[]'})
 	for p in pal:
+		if path != None and p.path.find(path) != 0:
+			break
 		xpage = xd.createElement('page')
 		xroot.appendChild(xpage)
 		xd.add(xpage,'path',p.path)

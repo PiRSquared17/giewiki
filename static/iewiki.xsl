@@ -510,8 +510,8 @@ See also the AdvancedOptions
 <div title="LoginDialog" viewTemplate="ViewOnlyTemplate">
 	<pre>&lt;&lt;loginDialog&gt;&gt;</pre>
 </div>
-<div title="SiteMap" viewTemplate="ViewOnlyTemplate">
-	<pre>&lt;&lt;siteMap&gt;&gt;</pre>
+<div title="SiteMap">
+	<pre>&lt;&lt;siteMap /&gt;&gt;</pre>
 </div>
 <div title="RecentChanges" viewTemplate="ViewOnlyTemplate">
   <pre>&lt;html&gt;&lt;div class='title'&gt;Recent changes&lt;/div&gt;&lt;/html&gt;

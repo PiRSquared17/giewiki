@@ -143,7 +143,11 @@ class Page(db.Model):
 	else:
 		return
 	self.put()
-  
+
+  @staticmethod
+  def Filter(path=None):
+	return Page().all() if path == None else Page().all().filter('path >=',path)
+
   def UpdateViolation(self):
 	if users.get_current_user() == None and self.anonAccess < 6:
 		return "You cannot change this page"

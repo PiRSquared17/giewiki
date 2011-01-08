@@ -7209,10 +7209,18 @@ config.macros.iFrame = {
 
 siteMap = [];
 config.macros.siteMap = {
-	handler: function(place, macroName, params, wikifier, paramString, tiddler) {
-		var url = params.length > 0 ? params[0] : window.location.pathname;
-		var m = http.siteMap({ path: url });
-		SiteMapEntry(place, m, 0, []);
+	handler: function (place, macroName, params, wikifier, paramString, tiddler) {
+		var rl = 0;
+		if (params[0] == '/')
+			var m = http.siteMap();
+		else {
+			if (params[0] === undefined)
+				params[0] = window.location.pathname;
+			var m = http.siteMap({ path: params[0] });
+			if (params[0] != '/')
+				rl = params[0][params[0].length - 1] == '/' ? 1 : 2;
+		}
+		SiteMapEntry(place, m, rl, []);
 	}
 }
 

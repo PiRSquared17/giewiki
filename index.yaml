@@ -31,6 +31,11 @@ indexes:
 
 - kind: Page
   properties:
+  - name: path>=
+  - name: path
+
+- kind: Page
+  properties:
   - name: sub
   - name: path
 
