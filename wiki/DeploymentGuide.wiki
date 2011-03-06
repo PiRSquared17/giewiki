@@ -1,22 +1,26 @@
-How to set up giewiki either for local use _-or-_ hosted by Google at your own appspot.com (sub-)site.
+How to set up giewiki either for local use _-or-_ hosted by Google at your own *appspot.com* (sub-)site.
 
 == Software Requirements ==
+Download the latest release (giewiki-1.x.zip) from here and unpack it (_or_ you can pull the bits directly from Subversion, if you have software to do so).
+Either way, you will also need [http://www.python.org/download/releases/2.5.4/ Python 2.5] (2.6 or 2.7 seem to work as well) and the [http://code.google.com/appengine/downloads.html App Engine SDK] from Google, both of which are also free (recent Mac or Linux boxes already have Python; if your're unsure, open a terminal window and type python [enter]).
 
-You will need [http://www.python.org/download/releases/2.5.4/ Python 2.5 (2.6 or 2.7 seem to work as well)] and the [http://code.google.com/appengine/downloads.html App Engine SDK] from Google, both of which are also free (recent Mac or Linux boxes already have Python; if your're unsure, open a terminal window and type python).
+== Running giewiki locally ==
+
+The App Engine SDK includes a simple web server together with the runtime libraries required to run a server on your own computer. Both the Windows and the Mac version also includes a graphical frontend called the *Google App Engine Launcher* for starting this web server. Simply fire it up and go to File - Add existing application. Point it to the folder containing the unpacked giewiki files. That will give you an entry in the list that it presents. Select this entry if it isn't already and click the *Run* button above. After a little while (during which Windows may prompt for your confirmation), the server should be ready and the *Browse* button gets enabled. Clicking that will fire up your default web browser with the address of your local server. If you are on Linux (or you want the server to start automatically), there is an alternative (command line) method which is described at http://code.google.com/appengine/docs/python/tools/devserver.html
 
 == Hosting requirements ==
 
 Unless you are setting it up on behalf of someone else, you will need to have your own (free) App Engine account. Go to https://appengine.google.com/start if you haven't one already - the process requires a phone capable of receiving text messages for the purpose of identification.
 
-= Adaptation =
+== Adaptation for hosting ==
 
-To deploy giewiki to your own site, you need to download and unpack giewiki-1.x.zip - _or_ you can pull the bits directly from Subversion, if you have software to do so. Either way, you need to change one file, the one named *app.yaml* (a plaintext file that you can edit with notepad (on a Mac, use textedit), altering the first line: 
+To deploy giewiki to your own *appspot.com* site (*this is not neccessary to use it locally*), you have to first change one file, the one named *app.yaml* (a plaintext file that you can edit with notepad (on a Mac, use textedit), altering the first line: 
 {{{
 application: giewiki
 }}}
-..to name your appspot subdomain in stead of {{{giewiki}}} (One Google account allows you to allocate up to 10 apps/subdomains).
+..to name your appspot subdomain in stead of {{{giewiki}}}.
 
-= Deployment =
+== Deployment to appspot.com ==
 
 Actual deployment can be performed using the *appcfg.py* script as described [http://code.google.com/appengine/docs/python/tools/uploadinganapp.html here]
 
