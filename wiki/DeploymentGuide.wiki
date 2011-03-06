@@ -1,8 +1,12 @@
-How to deploy giewiki at your own appspot site.
+How to set up giewiki either for local use _-or-_ hosted by Google at your own appspot.com (sub-)site.
 
-= Requirements =
+== Software Requirements ==
 
-In addition to having your own (free) App Engine account (go to https://appengine.google.com/start if you haven't one already), you will need [http://www.python.org/download/releases/2.5.4/ Python 2.5 (or 2.6)] and the [http://code.google.com/appengine/downloads.html App Engine SDK] from Google, both of which are also free (recent Mac or Linux boxes already have Python; if your're unsure, open a terminal window and type python).
+You will need [http://www.python.org/download/releases/2.5.4/ Python 2.5 (2.6 or 2.7 seem to work as well)] and the [http://code.google.com/appengine/downloads.html App Engine SDK] from Google, both of which are also free (recent Mac or Linux boxes already have Python; if your're unsure, open a terminal window and type python).
+
+== Hosting requirements ==
+
+Unless you are setting it up on behalf of someone else, you will need to have your own (free) App Engine account. Go to https://appengine.google.com/start if you haven't one already - the process requires a phone capable of receiving text messages for the purpose of identification.
 
 = Adaptation =
 
