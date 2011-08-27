@@ -10,7 +10,7 @@ The App Engine SDK includes a simple web server together with the runtime librar
 
 == appspot.com hosting requirements ==
 
-Unless you are setting it up on behalf of someone else, you will need to have your own (free) App Engine account. Go to https://appengine.google.com/start if you haven't one already - the process requires a phone capable of receiving text messages for the purpose of identification.
+Unless you are setting it up on behalf of someone else, you will need to have your own (free) App Engine account. Go to https://appengine.google.com/start if you haven't one already - the process requires a phone capable of receiving text messages for the purpose of identification. You can create up to 10 apps using the same account, which each must be allocated an available appspot subdomain and be defined to use either the default high-replication datastore or the master-slave version (the choice cannot be changed). Currently, there seems to be an error in the process of index creation for giewiki when using the high-replication datastore, so using the master-slave datastore is recommended for now.
 
 == Adaptation for hosting ==
 
