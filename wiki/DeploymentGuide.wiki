@@ -19,9 +19,9 @@ Unless you are setting it up on behalf of someone else, you will need to have yo
 
 To deploy giewiki to your own *appspot.com* site (*this is not neccessary to use it locally*), you have to first change one file, the one named *app.yaml* (a plaintext file that you can edit with notepad (on a Mac, use textedit), altering the first line: 
 {{{
-application: giewiki
+application: giewiki-hrd
 }}}
-..to name your appspot subdomain in stead of {{{giewiki}}}.
+..to name your appspot subdomain in stead of {{{giewiki-hrd}}}.
 
 == Deployment to appspot.com ==
 
