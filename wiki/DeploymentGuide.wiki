@@ -1,8 +1,5 @@
 How to set up giewiki either for local use _-or-_ hosted by Google at your own *appspot.com* (sub-)site.
 
-== Hosted deployment ==
-The good news is giewiki is now available as a project template in Adrian Scott's free online service for App Engine development and deployment, at https://www.coderbuddy.com - this is by far the easiest way to try out and to deploy giewiki to the cloud.
-
 == Software Requirements ==
 Download the latest release (giewiki-1.x.zip) from here and unpack it (_or_ you can pull the bits directly from Subversion, if you have software to do so).
 Either way, you will also need [http://www.python.org/download/releases/2.5.4/ Python 2.5] (2.6 or 2.7 seem to work as well) and the [http://code.google.com/appengine/downloads.html App Engine SDK] from Google, both of which are also free (recent Mac or Linux boxes already have Python; if your're unsure, open a terminal window and type python [enter]).
